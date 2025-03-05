@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флекс-контейнеры</title>
+    <style>
+        /* Внешний флекс-контейнер */
+        .outer-container {
+            display: flex;
+            flex-direction: row; /* Элементы выстраиваются в строку */
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /* Внутренний флекс-контейнер */
+        .inner-container {
+            display: flex;
+            flex-direction: column; /* Элементы выстраиваются в колонку */
+            background-color: lightcoral;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Стили для элементов внутри контейнеров */
+        .item {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="item"></div> <!-- Элемент 1 внешнего контейнера -->
+        <div class="item"></div> <!-- Элемент 2 внешнего контейнера -->
+        <div class="inner-container">
+            <div class="item"></div> <!-- Внутренний элемент 1 -->
+            <div class="item"></div> <!-- Внутренний элемент 2 -->
+        </div>
+        <div class="item"></div> <!-- Элемент 3 внешнего контейнера -->
+    </div>
+</body>
+</html>
